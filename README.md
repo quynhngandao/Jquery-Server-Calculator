@@ -10,7 +10,11 @@ Kept a historical record of all math operations and solutions on the server. Dis
 ## Installation
 1. Simply download or clone this repository
 2. Open up your editor of choice and make sure that Node.js is installed 
+<<<<<<< HEAD
 3. Run 'npm install -g npm' 
+=======
+3. Run 'npm install -g npm'
+>>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
 3. Run 'npm start' in you terminal 
 4. Open 'http://localhost:5000/' in browser
 
@@ -18,7 +22,11 @@ Kept a historical record of all math operations and solutions on the server. Dis
 ![Calculator function](images/base.png)
 
 ### Prerequisites
+<<<<<<< HEAD
 - Browser and editor of choice 
+=======
+- Editor and browser of choice
+>>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
 - [Node.js](https://nodejs.org/en/)
 
 ## Usage
@@ -29,7 +37,11 @@ Kept a historical record of all math operations and solutions on the server. Dis
 5. User will also be able to clear history by clicking 'C' button. 
 
 ## Built With
+<<<<<<< HEAD
 HTML, JAVASCRIPT, JQUERY, NODE,CSS
+=======
+HTML, JAVASCRIPT, JQUERY, NODE, CSS
+>>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
 
 ## Acknowledgement
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. 

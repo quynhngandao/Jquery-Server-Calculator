@@ -2,11 +2,18 @@ $(document).ready(onReady);
 
 function onReady() {
   getAnswer();
+<<<<<<< HEAD
 
   // equal button
   $("#equal-btn").on("click", postAnswer);
 
   // clear button
+=======
+  // equal button
+  $("#equal-btn").on("click", postAnswer);
+
+  // // clear button
+>>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
   $('#clear-btn').on('click', deleteAnswer);
 
   // operator button
@@ -95,8 +102,15 @@ function deleteAnswer() {
     url: "/calculator" 
   })
     .then(function (response) {
+<<<<<<< HEAD
       // call getAnswer()
       getAnswer(response);
+=======
+
+      // call getAnswer()
+      getAnswer(response);
+
+>>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
       // error deleting data
     })
     .catch(function (error) {
@@ -105,7 +119,12 @@ function deleteAnswer() {
     });
 }
 
+<<<<<<< HEAD
 // render()
+=======
+
+// render() to dom
+>>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
 function render(response) {
   // empty result data
   $("#result-data").empty();
@@ -114,7 +133,11 @@ function render(response) {
   for (let number of response) {
     $("#result-data").append(`
     <p>${number.result}</p>
+<<<<<<< HEAD
 <li> ${number.input1} ${number.operator} ${number.input2} = ${number.result} </li>
+=======
+<li id="delete"> ${number.input1} ${number.operator} ${number.input2} = ${number.result} </li>
+>>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
 `);
   }
 }

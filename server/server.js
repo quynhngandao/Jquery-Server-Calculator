@@ -16,11 +16,29 @@ const PORT = 5000;
 // Serve up static files (HTML, CSS, Client JS)
 app.use(express.static("server/public"));
 
+<<<<<<< HEAD
+=======
+// DELETE
+app.delete("/calculator", function (req, res) {
+  console.log("in /calculator delete:");
+
+  //clear global variable array
+  resultsHistory.length = 0;
+
+  //  No Content success status response
+  res.sendStatus(204);
+});
+
+>>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
 // GET
 app.get("/calculator", function (req, res) {
   console.log("request for /calculator was made");
 
+<<<<<<< HEAD
   // send data to client
+=======
+  // Send data to client
+>>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
   res.send(resultsHistory);
 });
 
@@ -35,7 +53,11 @@ app.post("/calculator", function (req, res) {
   // push data to req.body
   resultsHistory.push(req.body);
 
+<<<<<<< HEAD
   // send response to client
+=======
+  // Created success status response
+>>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
   res.sendStatus(201);
 });
 
@@ -59,6 +81,7 @@ function operation(number) {
   return result;
 }
 
+<<<<<<< HEAD
   // DELETE
 app.delete('/calculator', function (req, res) {
   
@@ -69,6 +92,8 @@ app.delete('/calculator', function (req, res) {
   res.sendStatus(204);
 })
 
+=======
+>>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
 // Start server
 app.listen(PORT, () => {
   console.log("Server is running on port", PORT);
