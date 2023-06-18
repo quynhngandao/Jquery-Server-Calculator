@@ -7,10 +7,7 @@
 - DONE npm install body-parser
 - DONE start script in package.json
 - DONE format HTML
-<<<<<<< HEAD
 - Question: what type of button to use for operator
-=======
->>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
 
 ## SERVER SIDE:
 - DONE call Express and body-parser
@@ -20,21 +17,12 @@
 - DONE Route GET
 - 1. DONE res.send(data)
 - DONE Route POST
-<<<<<<< HEAD
 - 1. DONE Assign data to req.body
 - 2. DONE Push data to global variable
 - 3. DONE res.sendStatus(201)
 - DONE Route DELETE
 - 1. DONE clear data from global variable 
 - 2. DONE res.sendStatus(204)
-=======
-- 1. DONE set data to req.body
-- 2. DONE push data to global variable
-- 3. DONE res.sendStatus(201);
-- DONE Route DELETE
-- 1. DONE clear data 
-- 2. DONE res.sendStatus(204);
->>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
 - DONE Start server
 #### JS CODE:
 - switch/break statement to handle calculation 
@@ -43,7 +31,7 @@
 ## CLIENT SIDE:
 - DONE STATIC FOLDER: html, css, jquery, js
 - DONE onReady
-- 1. DONE event listener: equal-btn, clear-btn, operator buttons
+- 1. DONE event listener: equal-btn, clear-btn (enclose with span and form to have the page auto refresh), operator buttons (set type="button")
 - 2. DONE call getAnswer()
 - DONE make a function for each operator button
 - 1. DONE set value to each operator buttons
@@ -55,20 +43,10 @@
 - 5. DONE call getAnswer()
 - DELETE event handler
 - 1. DONE AJAX request delete data
-<<<<<<< HEAD
-- 3. DONE call getAnswer()
-- GET event handler
-1. DONE AJAX
-2. DONE call render(response)
-- RENDER event handler
-1. DONE clear data before appending
-2. DONE append data to DOM
-=======
-- 2. DONE call getAnswer()
+- 3. DONE call getAnswer(response)
 - GET event handler
 - 1. DONE AJAX
 - 2. DONE call render(response)
-- 3. DONE render event handler
-- 4. DONE clear data before appending
-- 5. DONE append data to DOM
->>>>>>> 0add9ddd1667128c156e2e82043ec97043876239
+- DONE RENDER event handler
+- 1. DONE clear data before appending
+- 2. DONE append data to DOM
