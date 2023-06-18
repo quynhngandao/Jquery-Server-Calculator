@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="vendors/jquery-3.7.0.js"></script>
+    <script src="scripts/client.js"></script>
+    <title>Query Server Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Server Side Calculator</h1>
+    </header>
+    <div id="input-form">
+      <form>
+        <input type="number" id="input-one" />
+        <button type="button" class="operator" id="add-btn">+</button>
+        <button type="button" class="operator" id="subtract-btn">-</button>
+        <button type="button" class="operator" id="multiply-btn">*</button>
+        <button type="button" class="operator" id="divide-btn">/</button>
+        <input type="number" id="input-two" />
+        <button class="operator" id="equal-btn">=</button>
+        <button id="clear-btn">C</button>
+      </form>
+    </div>
+
+    <div id="result-data">
+      <!--Append data here-->
+    </div>
+  </body>
+</html>
