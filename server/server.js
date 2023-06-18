@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 // global variable
-let results = [];
+let resultsHistory = [];
 
 // use express
 const app = express();
@@ -21,7 +21,7 @@ app.get("/calculator", function (req, res) {
   console.log("request for /calculator was made");
 
   // send data to client
-  res.send(results);
+  res.send(resultsHistory);
 });
 
 // POST
@@ -33,7 +33,7 @@ app.post("/calculator", function (req, res) {
   console.log("Result: ", operation(number));
 
   // push data to req.body
-  results.push(req.body);
+  resultsHistory.push(req.body);
 
   // send response to client
   res.sendStatus(201);
@@ -56,17 +56,18 @@ function operation(number) {
       number.result = number.input1 / number.input2;
       break;
   }
-  // result = result.number
   return result;
 }
 
-//   // DELETE
-// app.delete('/calculator:index', function (req, res) {
-//   console.log('in /calculator delete:', req.params.index);
+  // DELETE
+app.delete('/calculator', function (req, res) {
+  
+  // clear data
+  resultsHistory.length = 0;
 
-//   // send response to client
-//   res.sendStatus(201);
-// })
+  // No Content success status response 
+  res.sendStatus(204);
+})
 
 // Start server
 app.listen(PORT, () => {
