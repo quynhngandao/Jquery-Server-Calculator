@@ -6,8 +6,8 @@ function onReady() {
   // equal button
   $("#equal-btn").on("click", postAnswer);
 
-  // // clear button
-  // $('#result-data').on('click', "#result", deleteAnswer);
+  // clear button
+  $('#clear-btn').on('click', deleteAnswer);
 
   // operator button
   $("#add-btn").on("click", add);
@@ -89,25 +89,21 @@ function getAnswer() {
 }
 
 // // deleteAnswer()
-// function deleteAnswer() {
-//   // get data index
-//   let index = $("this").data("index");
-
-//   $.ajax({
-//     type: "DELETE",
-//     url: "/calculator/" + index,
-//   })
-//     .then(function (response) {
-//       // call getAnswer()
-//       getAnswer();
-
-//       // error deleting data
-//     })
-//     .catch(function (error) {
-//       console.log(error);
-//       alert("Unable to delete data");
-//     });
-// }
+function deleteAnswer() {
+  $.ajax({
+    type: "DELETE",
+    url: "/calculator" 
+  })
+    .then(function (response) {
+      // call getAnswer()
+      getAnswer(response);
+      // error deleting data
+    })
+    .catch(function (error) {
+      console.log(error);
+      alert("Unable to delete data");
+    });
+}
 
 // render()
 function render(response) {
