@@ -10,8 +10,7 @@ Kept a historical record of all math operations and solutions on the server. Dis
 ## Installation
 1. Simply download or clone this repository
 2. Open up your editor of choice and make sure that Node.js is installed 
-3. Run 'npm install -g npm' 
-3. Run 'npm install -g npm'
+3. Run 'npm install'
 3. Run 'npm start' in you terminal 
 4. Open 'http://localhost:5000/' in browser
 
@@ -20,7 +19,6 @@ Kept a historical record of all math operations and solutions on the server. Dis
 
 ### Prerequisites
 - Browser and editor of choice 
-- Editor and browser of choice
 - [Node.js](https://nodejs.org/en/)
 
 ## Usage
