@@ -10,6 +10,7 @@ Kept a historical record of all math operations and solutions on the server. Dis
 ## Installation
 1. Simply download or clone this repository
 2. Open up your editor of choice and make sure that Node.js is installed 
+3. Run 'npm install -g npm' 
 3. Run 'npm start' in you terminal 
 4. Open 'http://localhost:5000/' in browser
 
@@ -17,6 +18,7 @@ Kept a historical record of all math operations and solutions on the server. Dis
 ![Calculator function](images/base.png)
 
 ### Prerequisites
+- Browser and editor of choice 
 - [Node.js](https://nodejs.org/en/)
 
 ## Usage
@@ -33,4 +35,4 @@ HTML, JAVASCRIPT, JQUERY, NODE,CSS
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. 
 
 ## Support
-If you have suggestions or issues, please email me at [nguy2884@umn.edu](www.google.com)
+If you have suggestions or issues, please email me at [nguy2884@umn.edu]
