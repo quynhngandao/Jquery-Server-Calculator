@@ -98,9 +98,6 @@ function deleteAnswer() {
       // call getAnswer()
       getAnswer(response);
 
-      // call getAnswer()
-      getAnswer(response);
-
       // error deleting data
     })
     .catch(function (error) {
@@ -118,7 +115,7 @@ function render(response) {
   for (let number of response) {
     $("#result-data").append(`
     <p>${number.result}</p>
-<li> ${number.input1} ${number.operator} ${number.input2} = ${number.result} </li>
-`);
+    <li> ${number.input1} ${number.operator} ${number.input2} = ${number.result} </li>
+    `);
   }
 }
