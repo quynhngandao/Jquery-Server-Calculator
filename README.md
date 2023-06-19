@@ -12,7 +12,7 @@ Kept a historical record of all math operations and solutions on the server. Dis
 2. Open up your editor of choice and make sure that Node.js is installed 
 3. Run 'npm install'
 3. Run 'npm start' in you terminal 
-4. Open 'http://localhost:5000/' in browser
+4. Open 'http://localhost:3000/' in browser
 
 ## Screen Shot
 ![Calculator pic](images/base.gif)
