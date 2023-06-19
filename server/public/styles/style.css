@@ -18,10 +18,17 @@ header,
 #result-data {
   margin-left: 25px;
 }
+p, #total {
+  margin-left: 25px;
+  font-family: "Roboto", sans-serif;
+  color:  rgb(75, 0, 145);
+  font-size: 20px;
+  font-weight: bold;
+}
 
 /* FORM ELEMENTS */
 input {
-  font-family: arial, sans-serif;
+  font-family:"Roboto", sans-serif;
   padding: 27px 10px;
   width: 100px;
   background: #fcfcfc;
