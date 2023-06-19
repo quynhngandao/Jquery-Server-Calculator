@@ -59,7 +59,7 @@ function postAnswer(e) {
     // server response OK
     .then(function (response) {
       // clear input data
-      $("#number-input").val("");
+      $("#input").val("");
 
       // call getAnswer()
       getAnswer();
