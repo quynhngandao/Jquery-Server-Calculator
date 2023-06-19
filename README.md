@@ -15,7 +15,8 @@ Kept a historical record of all math operations and solutions on the server. Dis
 4. Open 'http://localhost:5000/' in browser
 
 ## Screen Shot
-![Calculator pic](images/base.gif)
+![Calculator pic](images/base.png)
+![Calculator gif](images/base.gif)
 
 ### Prerequisites
 - Browser and editor of choice 
