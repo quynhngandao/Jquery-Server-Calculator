@@ -11,7 +11,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // port
-const PORT = 5000;
+const PORT = 3000;
 
 // Serve up static files (HTML, CSS, Client JS)
 app.use(express.static("server/public"));
@@ -79,7 +79,6 @@ app.delete('/calculator', function (req, res) {
   // No Content success status response 
   res.sendStatus(204);
 })
-
 
 // Start server
 app.listen(PORT, () => {
