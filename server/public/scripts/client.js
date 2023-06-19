@@ -17,6 +17,7 @@ function onReady() {
 }
 
 let operation = "";
+let total = 0;
 
 function add() {
   operation = "+";
@@ -111,11 +112,16 @@ function render(response) {
   // empty result data
   $("#result-data").empty();
 
+  
+ 
+
   // append result data
   for (let number of response) {
+    total = number.result;
     $("#result-data").append(`
-    <p>${number.result}</p>
-    <li> ${number.input1} ${number.operator} ${number.input2} = ${number.result} </li>
+    <li> ${number.input1} ${number.operator} ${number.input2} = ${total} </li>
     `);
   }
+  // change total
+  $('#total').text(total);
 }
